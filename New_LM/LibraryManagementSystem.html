@@ -1,0 +1,163 @@
+<html>
+
+
+<head>
+    
+        <title>Library </title>    
+
+
+        <style>
+
+           #div1 h1{
+               position: relative;
+               margin-left: 32%;
+           }
+             #div1 p{
+               position: relative;
+               margin-left: 32%;
+               letter-spacing: 3px;
+               word-spacing: 12px;
+           }
+            body{
+                background: url("img/libraryImg4.jpg") ;
+                /*height:20%;*/
+                background-color: black;
+                 /*border-bottom:2px solid white; */
+            
+            }
+            button{
+                opacity: 0px;
+                 background-color: black;
+                 color: white;
+            }
+            #div1{
+                background-color: black;
+                border-bottom:2px solid white; 
+                width:100%;
+                color:white;    
+               margin-left: -10;
+                margin-top: -10;
+                position:absolute;
+                justify-content: center;
+                align-content: center;
+            }
+             #div2{
+                margin-left:25%;
+                margin-top:12%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+             #div5{
+                margin-left:60%;
+                margin-top:12%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+             #div4{
+                margin-left:12%;
+                margin-top:58%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+            #div3{
+                margin-left:25%;
+                margin-top:38%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+            #div6{
+                margin-left:60%;
+                margin-top:38%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+             #div7{
+                margin-left:52%;
+                margin-top:58%;
+                position:absolute;
+                align-content: center;
+                 /*background-color:powderblue;*/
+            }
+
+         </style>   
+ </head>
+
+
+ <body>
+
+    <div id="div1">
+             <h1>LIBRARY MANAGEMENT</h1>
+
+             <p id="p1"> </p>
+    </div>         
+
+
+    <div id="div2">
+             <h1 > List Of Books </h1>
+           <button onclick="GetList()">List</button>
+             <ul id="ul1"> </ul>
+    </div>  
+
+
+
+     <div id="div3">
+             <h1 > Search Books </h1>
+            <input type="number" id="SearchId" placeholder="Enter Book ID"><button onclick="Search()">Search</button>
+            <p id="seachP"> </p>
+    </div>  
+
+
+    <div id="div4">
+             <h1 > Order Books </h1>
+            <input type="number" id="orderId" placeholder="BookID"> 
+            <input type="text" id="custName" placeholder="CustomerNAme">
+            <button onclick="Order()">Order</button>
+            <p id="seachP"> </p>
+    </div>  
+<div id="div5">
+           <h1 > Get Order List </h1>
+            <button onclick="GetOrders()">Order</button>
+            <ul id="ul2"> </ul>
+    </div>  
+ 
+
+
+<div id="div6">
+             <h1 >Search Order </h1>
+              <input type="text" id="searchOrderId" placeholder="EnterOrderID">
+             <button onclick="SearchOrder()">Get Order</button>
+              <p id="orderS"> </p>
+    </div>  
+
+<div id="div7">
+             <h1 >Delete Order or Patch Order</h1>
+              <input type="text" id="deleteId" placeholder="EnterOrderID">
+             <button onclick="deleteOrder()">Delete Order</button>
+             <input type="text" id="patchName" placeholder="Enter Customer Name">
+              <button onclick="PatchOrder()">Patch Order</button>
+              <p id="orderD"> </p>
+    </div>  
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+         <script src="LibraryManagement.js">
+
+          
+
+        </script>   
+
+ </body>    
+ 
+
+
+
+</html>
